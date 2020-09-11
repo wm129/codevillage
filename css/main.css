@@ -1,0 +1,522 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.18;
+}
+
+.concept, .menu {
+  padding: 0, 13%;
+  margin: 0, auto;
+}
+
+.title {
+  padding-top: 238px;
+  font-size: 1.8rem;
+  color: #707070;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title:after {
+  display: inline-block;
+  content: "";
+  border: 1px solid #707070;
+  width: 100px;
+  margin-left: 21px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 68px;
+  position: absolute;
+  z-index: 10;
+}
+
+@media screen and (max-width: 959px) {
+  header {
+    background-color: #ffffff;
+  }
+}
+
+.header-logo {
+  font-size: 3.8rem;
+  width: 330px;
+}
+
+.pc-navmenu {
+  width: 41%;
+  top: 74px;
+  margin-left: 20px;
+  margin-right: 487px;
+  height: 42px;
+}
+
+@media screen and (max-width: 959px) {
+  .pc-navmenu {
+    display: none;
+  }
+}
+
+.pc-navmenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.8rem;
+}
+
+.pc-navmenu ul li:not(:first-child) {
+  color: #707070;
+}
+
+.pc-navmenu ul li:first-child {
+  border-bottom: solid 1px;
+}
+
+.ham {
+  display: none;
+}
+
+@media screen and (max-width: 959px) {
+  .ham {
+    width: 16px;
+    height: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .ham span {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+  }
+}
+
+.first-v {
+  background-image: url(../img/1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.first-v_wrap {
+  position: absolute;
+  -webkit-transform: translate(43%, 75%);
+          transform: translate(43%, 75%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 26vh;
+}
+
+@media screen and (max-width: 600px) {
+  .first-v_wrap {
+    -webkit-transform: translate(53%, 135%);
+            transform: translate(53%, 135%);
+  }
+}
+
+.sub-catch, .fv-catch {
+  font-family: 'Osaka', sans-serif;
+  font-size: 3.8rem;
+}
+
+@media screen and (max-width: 600px) {
+  .sub-catch, .fv-catch {
+    color: #ffffff;
+  }
+}
+
+.fv-catch {
+  font-family: Cambria, serif;
+}
+
+@media screen and (max-width: 600px) {
+  .fv-catch {
+    color: #ffffff;
+  }
+}
+
+.concept {
+  width: 100%;
+  height: 1000px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #A193861F), to(#A1938689));
+  background: linear-gradient(to bottom, #A193861F 40%, #A1938689 100%);
+  background-image: url(../img/2.png), url(../img/3.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 12% 10%, 85% 10%;
+}
+
+.menu-wrap {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+  .menu-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.menu-wrap-item {
+  width: 21%;
+  height: 555px;
+  padding: 0 10px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+@media screen and (max-width: 600px) {
+  .menu-wrap-item {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+.menu-wrap-img {
+  width: 21%;
+  height: 271px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  height: 100%;
+  display: block;
+}
+
+.menu-wrap-item h3 {
+  font-size: 3.0rem;
+  font-family: Roboto Mono for Powerline;
+  letter-spacing: 0.05em;
+  padding: 3.7rem 0 0 0;
+}
+
+@media screen and (max-width: 600px) {
+  .menu-wrap-item h3 {
+    text-align: left;
+  }
+}
+
+.menu-wrap-item p {
+  font-size: 1.6rem;
+  font-family: Roboto Mono for Powerline;
+  letter-spacing: 0.1em;
+  padding: 3.4rem;
+  text-align: left;
+}
+
+.menu-wrap-item h4 {
+  font-size: 1.6rem;
+  font-family: Roboto Mono for Powerline;
+  letter-spacing: 0.1em;
+  padding: 3.4rem;
+  text-align: right;
+}
+
+.access {
+  background-color: #A193861F;
+  width: 100%;
+  height: 100vh;
+}
+
+.access-wrap {
+  background-color: #D0C5BA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 52vh;
+  position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  .access-wrap {
+    position: static;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.access-box {
+  width: 16%;
+  height: 25vh;
+  margin: 101px 193px 103px 107px;
+  letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 600px) {
+  .access-box {
+    width: 55%;
+    height: 28vh;
+    margin: 30px 148px 60px 20px;
+  }
+}
+
+.access-title {
+  text-align: left;
+  color: #00000038;
+  font-family: Roboto Mono for Powerline;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 4%;
+}
+
+.info {
+  text-align: left;
+  color: #FFFFFF;
+  font-family: Roboto Mono for Powerline;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.map {
+  width: 60%;
+  height: 52%;
+}
+
+@media screen and (max-width: 600px) {
+  .map {
+    width: 100%;
+  }
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 40%;
+  right: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .map iframe {
+    position: static;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 342px;
+  position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    position: static;
+  }
+}
+
+.footer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 78%;
+  left: 10%;
+  width: 1065px;
+  height: 115px;
+  border-top: 1px solid #70707036;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-box {
+    position: static;
+    display: inline;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.footer-logo {
+  font-size: 3.2rem;
+  color: #7070704D;
+  letter-spacing: 0.1em;
+  margin-right: 26px;
+}
+
+i {
+  font-size: 19px;
+  color: black;
+}
+
+.res-btn {
+  width: 184px;
+  height: 37px;
+  border: 1px solid #707070;
+  font-size: 1.8rem;
+  color: #707070;
+  line-height: 1.5;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,48 @@
+footer {
+    width: 100%;
+    height: 342px;
+    position: relative; 
+    @include sp {
+        position: static;
+    }
+}
+
+.footer-box {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 78%;
+    left: 10%;
+    width: 1065px;
+    height: 115px;
+    border-top: 1px solid #70707036;
+    @include sp {
+        position: static;
+        display: inline;
+        flex-direction: column-reverse;
+    }
+    }
+    
+    
+.footer-logo {
+        font-size: 3.2rem;
+        color: #7070704D;
+        letter-spacing: 0.1em;
+        margin-right: 26px;
+    }
+i {
+    font-size: 19px;
+    color: black;
+}
+
+.res-btn {
+        width: 184px;
+        height: 37px;
+        border: 1px solid $gray;
+        font-size: 1.8rem;
+        color: $gray;
+        line-height: 1.5;
+        
+    }
