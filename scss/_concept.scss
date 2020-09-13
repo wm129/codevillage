@@ -1,13 +1,9 @@
 .concept {
-    width: 100%;
-	height: 1000px;
-	background: linear-gradient(to bottom, #A193861F 40%, #A1938689 100%);
-	background-image: url(../img/2.png), url(../img/3.png);
-					 
-	background-repeat: no-repeat,
-					  no-repeat;
-					  
-	background-position: 12% 10%,
-						85% 10%; 
+    
+	background: linear-gradient(0deg, #A1938689 0%, #A1938689 50%,  #A193861F 50%, #A193861F 100%);	
+}
+.concept-img {
+	display: flex;
+	justify-content: flex-start;
 	
 }
