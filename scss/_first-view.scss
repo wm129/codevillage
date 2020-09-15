@@ -23,7 +23,7 @@
         font-family: 'Osaka', sans-serif;
         font-size: 3.8rem;
         @include sp {
-            color: #ffffff;
+            color: $background;
         }
 } 
 
@@ -32,6 +32,6 @@
     @extend .sub-catch;
     font-family: Cambria, serif;
     @include sp {
-        color: #ffffff;
+        color: $background;
     }
 }

@@ -17,15 +17,17 @@ body {
 
 .inner {
     width: 85%;
-    margin: 0, auto;
+    margin: 0 auto;
 }
 
 .title {
     padding-top: 256px;
+    padding-left: 101px;
     font-size: 1.8rem;
     color: $gray;
     display: flex;
     align-items: center;
+    letter-spacing: 0.5rem;
     &:after {
         display: inline-block;
         content: "";
